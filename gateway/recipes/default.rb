@@ -1,6 +1,3 @@
-include_recipe 'sysctl'
-sysctl_param 'net.ipv4.ip_forward' do
-	value 1
+file "/etc/sysctl.d/50-nat-ip-forward.conf" do
+	content "net.ipv4.ip_forward=1"
 end
-include_recipe 'iptables'
-iptables_rule 'ip_masquerade'
