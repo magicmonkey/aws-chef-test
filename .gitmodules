@@ -1,3 +1,0 @@
-[submodule "sysctl"]
-	path = sysctl
-	url = https://github.com/onehealth-cookbooks/sysctl.git
